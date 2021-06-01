@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- Page for testing retrieving documents. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Incoming JSON data!</title>
+    </head>
+    <body>
+        <h1># Documents: {{ count }}</h1>
+        {% for each in cursor %}
+            <div class="document">
+                {{ each }}
+            </div>
+        {% endfor %}
+    </body>
+</html>
